@@ -1,0 +1,20 @@
+<div class="container">
+	<div class="row">
+        <div class="col-md-6">
+    		<h2>Logging Interface</h2>
+            <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                    <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+                      <div class="formGroup">
+                        <input type="text" class="form-control input-lg" placeholder="Login" id="email" formControlName="email"/><br>
+                        <input type="text" class="form-control input-lg" placeholder="Password" id="password" formControlName="password"/><br>
+                        <span class="input-group-btn">
+                          <button class="btn btn-success" [disabled]="loginForm.invalid"> Login</button>
+                        </span>
+                      </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
